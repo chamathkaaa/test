@@ -1,3 +1,6 @@
+<?php include("path.php"); ?>
+<?php include("../app/controllers/bookCRUD.php"); ?>
+
 <!--
 =========================================================
 * Material Dashboard Dark Edition - v2.1.0
@@ -152,7 +155,7 @@
                       <div class="tab-pane active" id="add">  
 
                         <div class="card-body">
-                          <form>
+                          <form action="books.php" method="post">
 
                               <div class="fileinput fileinput-new text-center" data-provides="fileinput">                        
                                 
@@ -252,7 +255,7 @@
                             </div>
                             
                             <div style="margin-left: 425px">
-                            <button type="submit" class="btn btn-primary ">Add Book</button>
+                            <button type="submit" class="btn btn-primary" name="btnAddBook">Add Book</button>
                             <div class="clearfix"></div>
                             </div>
                           </form>
