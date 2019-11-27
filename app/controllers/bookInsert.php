@@ -15,6 +15,7 @@
 
     include(ROOT_PATH . "/app/database/db.php");
     if(isset($_POST['btnAddBook'])){
+        unset($_POST['btnAddBook']);
         dd($_POST);
         
     }

@@ -1,5 +1,5 @@
 <?php include("../path.php"); ?>
-<?php include(ROOT_PATH . "../app/controllers/bookCRUD.php"); ?>
+<?php include(ROOT_PATH . "../app/controllers/bookInsert.php"); ?>
 
 <?php
 
