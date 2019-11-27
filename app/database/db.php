@@ -19,7 +19,7 @@
         $stm = $conn->prepare($sql);
         $values = array_values($data);
         $types = str_repeat('s', count($values));
-        $stm->bind_param($types, ...$values);
+        $stm->bind_param($types, $values);
         $stm->execute();
         return $stm;
     }
