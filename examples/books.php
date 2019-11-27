@@ -1,5 +1,14 @@
-<?php include("path.php"); ?>
-<?php include("../app/controllers/bookCRUD.php"); ?>
+<?php include("../path.php"); ?>
+<?php include(ROOT_PATH . "../app/controllers/bookCRUD.php"); ?>
+
+<?php
+
+    /*include(ROOT_PATH . "../app/database/db.php");
+    if(isset($_POST['btnAddBook'])){
+        var_dump($_POST);
+        die();
+    }*/
+?>
 
 <!--
 =========================================================
@@ -178,7 +187,7 @@
                                   </span>
                                 </div>
                                 <input type="text" name="ID" size="45"
-                               class="form-control" placeholder="Book ID..." required>
+                               class="form-control" placeholder="Book ID..." >
                               </div>
                             </div>
 
